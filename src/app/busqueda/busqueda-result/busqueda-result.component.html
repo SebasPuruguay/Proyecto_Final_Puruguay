@@ -1,0 +1,33 @@
+<div *ngIf="criteriaListenedFromExternalComponent.criteria==''" class="wrapper">
+  <div class="titulo">
+    <h1 style="color: rgb(22, 68, 107);">Criteria no seleccionada</h1>
+  </div>
+</div>
+<div class="wrapper" *ngIf="loading">
+  <<div class="lds-facebook"><div></div><div></div><div></div></div>
+</div>
+<div *ngIf="criteriaListenedFromExternalComponent.criteria!='' && !loading"  >
+  <div class="wrapper">
+    <div class="titulo">
+      <h1 style="color: rgb(19, 58, 92);">{{criteriaListenedFromExternalComponent.criteria}}</h1>
+    </div>
+  </div>
+  <hr>
+  <mat-grid-list cols="2"
+  rowHeight="20rem" gutterSize="1.5rem">
+  <div *ngFor="let airline of criteriaListenedFromExternalComponent.aerolonia">
+    <mat-grid-tile><img height="50%" [src]="airline.logo_url"></mat-grid-tile>
+    <mat-grid-tile>
+      <div class="texto">
+        <h1>{{airline.name}}</h1>
+      <hr>
+      <p>Profesor esta api no trabaja como la de dog, esta pide un codigo o nombre como entrada para encontrar la aerolinea</p>
+      <p>Profesor esta api no trabaja como la de dog, esta pide un codigo o nombre como entrada para encontrar la aerolinea</p>
+      </div>
+    </mat-grid-tile>
+  </div>
+</mat-grid-list>
+</div>
+
+
+

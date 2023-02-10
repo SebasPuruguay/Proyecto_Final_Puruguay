@@ -1,0 +1,20 @@
+img {
+  border-radius: 6.5rem; /*Para dar borde*/
+}
+
+mat-grid-list {
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  padding:6rem  /*Para dar espacio dentro de grilla*/
+}
+
+.texto {
+  background-color: rgba(6, 24, 78, 0.952);  /*Para dar color a fondo*/
+  width: 40rem;  /*Para determinar espacio usado de ancho*/
+  padding: 2.5rem;
+  border-radius: 2rem;
+}
+p,h1 {
+  color: #ffffff;
+  font-weight: normal;
+}

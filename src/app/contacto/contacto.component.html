@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-title style="margin-top: 2rem; margin-bottom: 2rem; color: #fff;margin-left: 25rem; margin-right: 25rem;">Caja de sugerencias</mat-card-title>
+  <mat-card-content>
+    <form (submit)="guardarPost(postForm)" #postForm="ngForm">
+    <mat-form-field>
+      <textarea rows="6" matInput ngModel placeholder="Escriba aquí su sugerencia" name="inputUser" required #inputUser="ngModel"></textarea>
+      <mat-error>Introduzca su sugerencia</mat-error>
+    </mat-form-field>
+    <hr>
+
+    <div class="button">
+    <button mat-raised-button color="primary">Guardar Post</button>
+
+  </div>
+    <hr>
+  </form>
+  </mat-card-content>
+  <mat-card-title style="margin-top: 2rem; margin-bottom: 2rem; color: #fff;margin-left: 25rem; margin-right: 25rem;">Contactanos: 921839123/@aeroInfo</mat-card-title>
+
+</mat-card>
+

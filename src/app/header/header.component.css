@@ -1,0 +1,18 @@
+.spacer {
+  justify-content: space-between;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  color: accent;
+  background-color: rgb(24, 49, 119);
+  padding: 15px 25px;
+}
+.texto {
+  background-color: rgba(4, 23, 78, 0.95);  /*Para dar color a fondo*/
+}
